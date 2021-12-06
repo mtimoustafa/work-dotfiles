@@ -1,6 +1,7 @@
 ### My configuration ###
 # Aliases
 eval "$(hub alias -s)" # hub is a git extender - can be safely aliased as git
+alias tree='git log --graph --decorate --oneline --all'
 alias diff='git difftool --tool=vimdiff' # Prettier diff
 kube-logs() { kubectl logs -f $(kubectl get pods -o=name -l app=$1 --no-headers) --all-containers --max-log-requests 30 } # Tail K8s pod
 kube-exec() { kubectl exec -it $(kubectl get pods -o=name -l app=$1 --no-headers) $2 } # Execute command on K8s pod
