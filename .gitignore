@@ -1,1 +1,7 @@
-*.swp
+*
+!.vimrc
+!.zsh_profile
+!README.md
+!iterm-service.scpt
+!iterm_theme.json
+!notable_tech.md
