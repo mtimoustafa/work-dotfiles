@@ -1,11 +1,19 @@
 # Work Dotfiles
-* Shell: zsh
-* Shell framework: Oh My Zsh
-* Zsh theme: powerlevel10k
+* Shell: zsh + oh my zsh
+* Theme: powerlevel10k
 
-## Notable Tools
-* ngrok
-* hub
-* git-cli
-* k9s
+## Applications
+* Amphetamine
+* Firefox Developer Edition / Chrome Canary
+* Obsidian (Google Drive for syncing)
+* Mos
+* Smoothscroll
+* Adnaueseum extension for Chrome
+
+## CLI Tools
 * ctop
+* k9s
+* gh
+* hub
+* ngrok
+* fzf
