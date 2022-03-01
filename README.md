@@ -8,7 +8,6 @@
 * Obsidian (Google Drive for syncing)
 * Mos
 * Steermouse
-* Smoothscroll
 * Adnaueseum extension for Chrome
 
 ## CLI Tools
