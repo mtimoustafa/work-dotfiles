@@ -8,6 +8,8 @@
 * Productboard
 * Datadog
 * Kibana
+* LaunchDarkly
+* Linear
 
 # Chrome Extensions
 * Apollo dev tools
