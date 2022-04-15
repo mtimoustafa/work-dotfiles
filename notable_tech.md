@@ -14,3 +14,7 @@
 # Chrome Extensions
 * Apollo dev tools
 * Momentum
+
+# MacOS Apps
+* iTerm
+* TablePlus

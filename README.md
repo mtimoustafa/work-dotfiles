@@ -17,3 +17,4 @@
 * hub
 * ngrok
 * fzf
+* jless
