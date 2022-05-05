@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 "------------- Plugins - specified by me "
 
 " Fuzzy search
-set rtp+=/usr/local/opt/fzf "Tie fzf to fzf.vim
+Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0) " Don't search file names in Rg
 
@@ -41,6 +41,7 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 
 Plugin 'pangloss/vim-javascript' " JS syntax highlighting
 Plugin 'cakebaker/scss-syntax.vim' " SCSS syntax highlighting
+Plugin 'evanleck/vim-svelte' " Svelte syntax highlighting
 
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
