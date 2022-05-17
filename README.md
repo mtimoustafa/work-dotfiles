@@ -18,3 +18,4 @@
 * ngrok
 * fzf
 * jless
+* difftastic
