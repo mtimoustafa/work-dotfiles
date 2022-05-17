@@ -2,3 +2,4 @@
 ### Source it right at the top of ~/.zshrc ###
 
 curl 'wttr.in/?1FQp'
+fortune

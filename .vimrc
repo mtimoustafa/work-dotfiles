@@ -38,6 +38,10 @@ Plugin 'posva/vim-vue'
 " let g:vue_pre_processors = ['scss', 'typescript']
 " JSX syntax highlighting
 Plugin 'MaxMEllon/vim-jsx-pretty'
+" GraphQL syntax highlighting
+Plugin 'jparise/vim-graphql'
+" Typescript syntax highlighting
+Plugin 'leafgarland/typescript-vim'
 
 Plugin 'pangloss/vim-javascript' " JS syntax highlighting
 Plugin 'cakebaker/scss-syntax.vim' " SCSS syntax highlighting
