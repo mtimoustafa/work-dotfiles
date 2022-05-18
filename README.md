@@ -9,6 +9,7 @@
 * Mos
 * Steermouse
 * Adnaueseum extension for Chrome
+* TablePlus
 
 ## CLI Tools
 * ctop
