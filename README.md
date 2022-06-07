@@ -20,3 +20,4 @@
 * fzf
 * jless
 * difftastic
+* watch
