@@ -33,6 +33,9 @@ Plugin 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1 " Add a space after comment symbols
 let g:NERDDefaultAlign = 'left' " Align comment symbols vertically
 
+" Highlighting for everything
+Plugin 'sheerun/vim-polyglot'
+
 " Vue syntax highlighting
 Plugin 'posva/vim-vue'
 " let g:vue_pre_processors = ['scss', 'typescript']
