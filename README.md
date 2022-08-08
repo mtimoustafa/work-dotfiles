@@ -10,6 +10,10 @@
 * Steermouse
 * Adnaueseum extension for Chrome
 * TablePlus
+* Momentum
+* Pinboard Tools
+* taba11y extension
+* Axe Devtools
 
 ## CLI Tools
 * ctop
