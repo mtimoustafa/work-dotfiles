@@ -4,6 +4,7 @@ alias tree='git log --graph --oneline'
 alias diff='git difftool --tool=vimdiff' # Prettier diff
 kube-logs() { kubectl logs -f $(kubectl get pods -o=name -l app=$1 --no-headers) --all-containers --max-log-requests 30 } # Tail K8s pod
 kube-exec() { kubectl exec -it $(kubectl get pods -o=name -l app=$1 --no-headers) $2 } # Execute command on K8s pod
+timer() { (sleep $1 && say -r 140 -v Samantha "It is time") & echo $! > ~/timerps } # Set a timer for X minutes and write PID to file
 
 # Make fzf look up hidden files
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
