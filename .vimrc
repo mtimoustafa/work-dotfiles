@@ -11,6 +11,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 "------------- Plugins - specified by me "
 
+" Honor EditorConfig settings if repo needs consistent coding style
+Plugin 'editorconfig/editorconfig-vim'
+
 " Fuzzy search
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -75,8 +78,7 @@ Plugin 'MattesGroeger/vim-bookmarks' " Bookmarks!
 " "===
 
 "=== Themes
-Plugin 'dracula/vim'
-let g:dracula_italic = 0 " Italics here mess with things
+Plugin 'Mofiqul/dracula.nvim'
 "===
 " Refresh colorscheme when it misbehaves
 map <Leader>C :colorscheme dracula<CR> 
@@ -99,6 +101,9 @@ syntax enable
 hi Normal ctermbg=none
 colorscheme dracula
 set guifont=Input\ Regular
+
+" Transparent background override
+"highlight Normal guibg=none
 
 " Quality-of-life
 set number relativenumber " Set line numbers in hybrid mode (absolute on current line, relative on others)
