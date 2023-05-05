@@ -53,6 +53,8 @@ Plugin 'pangloss/vim-javascript' " JS syntax highlighting
 Plugin 'cakebaker/scss-syntax.vim' " SCSS syntax highlighting
 Plugin 'evanleck/vim-svelte' " Svelte syntax highlighting
 
+Plugin 'mbbill/undotree' " Undo tree browser
+
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
@@ -138,6 +140,7 @@ map <Leader>S :Lines<CR>
 map <Leader>r :Ag<CR>
 map <Leader>f :NERDTree<CR>
 map <Leader>F :NERDTreeFind<CR>
+nnoremap <Leader>u :UndotreeToggle<CR>
 
 " Plumbing
 set termguicolors " Proper terminal colours
