@@ -1,4 +1,0 @@
-### For commands that go before powerlevel10k's instant prompt enabling. ###
-### Source it right at the top of ~/.zshrc ###
-
-curl 'wttr.in/?1FQp' --max-time 3
