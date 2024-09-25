@@ -33,3 +33,4 @@ The `.zsh_profile_safe` file must be manually added to the shell configuration. 
 * difftastic
 * watch
 * cal
+* [atuin](https://atuin.sh)
