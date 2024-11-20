@@ -34,3 +34,4 @@ The `.zsh_profile_safe` file must be manually added to the shell configuration. 
 * watch
 * cal
 * [atuin](https://atuin.sh)
+* [glow](https://github.com/charmbracelet/glow)
