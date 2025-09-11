@@ -3,67 +3,80 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
 
-"------------- Plugins - specified by me "
+"------------- Vundles & Bundles - specified by me "
 
 " Honor EditorConfig settings if repo needs consistent coding style
-Plugin 'editorconfig/editorconfig-vim'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Fuzzy search
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
+Bundle 'junegunn/fzf'
+Bundle 'junegunn/fzf.vim'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0) " Don't search file names in Rg
 
-Plugin 'itchyny/lightline.vim' " Status bar at bottom
-Plugin 'mg979/vim-visual-multi' " Multiple cursor support
-Plugin 'airblade/vim-gitgutter' " Git gutter before line numbers
+" Status bar at bottom
+Bundle 'itchyny/lightline.vim'
+
+" Multiple cursor support
+Bundle 'mg979/vim-visual-multi'
+
+" Git gutter before line numbers
+Bundle 'airblade/vim-gitgutter'
 
 " Directory tree viewer
-Plugin 'preservim/nerdtree'
+Bundle 'preservim/nerdtree'
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.swp$']
 
 " Code minimap
-Plugin 'severin-lemaignan/vim-minimap'
+Bundle 'severin-lemaignan/vim-minimap'
 
 " Faster commenting out / in
-Plugin 'preservim/nerdcommenter'
+Bundle 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1 " Add a space after comment symbols
 let g:NERDDefaultAlign = 'left' " Align comment symbols vertically
 
 " Highlighting for everything
-Plugin 'sheerun/vim-polyglot'
+Bundle 'sheerun/vim-polyglot'
 
 " Vue syntax highlighting
-Plugin 'posva/vim-vue'
+Bundle 'posva/vim-vue'
 " let g:vue_pre_processors = ['scss', 'typescript']
 " JSX syntax highlighting
-Plugin 'MaxMEllon/vim-jsx-pretty'
+Bundle 'MaxMEllon/vim-jsx-pretty'
 " GraphQL syntax highlighting
-Plugin 'jparise/vim-graphql'
+Bundle 'jparise/vim-graphql'
 " Typescript syntax highlighting
-Plugin 'leafgarland/typescript-vim'
+Bundle 'leafgarland/typescript-vim'
 
-Plugin 'pangloss/vim-javascript' " JS syntax highlighting
-Plugin 'cakebaker/scss-syntax.vim' " SCSS syntax highlighting
-Plugin 'evanleck/vim-svelte' " Svelte syntax highlighting
+" JS syntax highlighting
+Bundle 'pangloss/vim-javascript'
+" SCSS syntax highlighting
+Bundle 'cakebaker/scss-syntax.vim'
+" Svelte syntax highlighting
+Bundle 'evanleck/vim-svelte'
 
-Plugin 'mbbill/undotree' " Undo tree browser
+" Undo tree browser
+Bundle 'mbbill/undotree'
 
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
-Plugin 'Yggdroot/indentLine' " Indent markers
-Plugin 'jeetsukumaran/vim-indentwise' " Jump to line with same indent
-Plugin 'MattesGroeger/vim-bookmarks' " Bookmarks!
+" Indent markers
+Bundle 'Yggdroot/indentLine'
+" Jump to line with same indent
+Bundle 'jeetsukumaran/vim-indentwise'
+" Bookmarks!
+Bundle 'MattesGroeger/vim-bookmarks'
 
 " "=== Linter in editor
-" Plugin 'vim-syntastic/syntastic'
+" Bundle 'vim-syntastic/syntastic'
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
@@ -80,14 +93,13 @@ Plugin 'MattesGroeger/vim-bookmarks' " Bookmarks!
 " "===
 
 "=== Themes
-Plugin 'Mofiqul/dracula.nvim'
+Bundle 'Mofiqul/dracula.nvim'
 "===
 " Refresh colorscheme when it misbehaves
 map <Leader>C :colorscheme dracula<CR> 
 "-------------"
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" All of your Bundles must be added before the following line
 filetype plugin indent on    " required
 "========================"
 
@@ -133,7 +145,7 @@ nnoremap <Leader>b :ls<CR>:b
 "Close quickfix buffer after a selection
 :autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
 
-" Plugin shortcuts
+" Bundle shortcuts
 map <Leader>t :Files<CR>
 map <Leader>s :BLines<CR>
 map <Leader>S :Lines<CR>
