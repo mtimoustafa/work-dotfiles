@@ -42,3 +42,6 @@ vim.g.loaded_netrwPlugin = 1
 
 -- LSP
 vim.lsp.inlay_hint.enable(true) -- TODO: not sure what this does yet?
+
+-- Don't conceal markdown or other text
+vim.opt.cole = 0

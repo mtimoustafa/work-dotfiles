@@ -13,7 +13,8 @@ return {
 
     vim.keymap.set('n', '<leader>t', builtin.find_files, { desc = 'Telescope find files' })
     vim.keymap.set('n', '<leader>r', builtin.live_grep, { desc = 'Telescope live grep' })
-    vim.keymap.set('n', '<leader>s', builtin.grep_string, { desc = 'Telescope grep string' })
+    vim.keymap.set('n', '<leader>k', builtin.commands, { desc = 'Telescope list vim commands' })
+    vim.keymap.set('n', '<leader>h', builtin.help_tags, { desc = 'Telescope help tags' })
 
     require("telescope").setup({}) -- Config goes here
   end,
