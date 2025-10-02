@@ -35,3 +35,6 @@ The `.zsh_profile_safe` file must be manually added to the shell configuration. 
 * cal
 * [atuin](https://atuin.sh)
 * [glow](https://github.com/charmbracelet/glow)
+
+## Tips & Tricks
+* Run `:healthcheck` in neovim to confirm the program and its extensions are working as expected.
