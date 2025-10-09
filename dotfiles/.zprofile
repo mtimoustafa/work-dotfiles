@@ -26,3 +26,7 @@ export GPG_TTY=$(tty)
 
 # Quick command for setting up daily work environment
 alias morning="~/Library/Application\ Support/iTerm2/iterm2env/versions/3.10.4/bin/python3 ~/morningRoutine.py"
+
+# Use neovim for reading manpages (:Man / :h Man for info)
+export MANPAGER="nvim +Man!"
+export MANWIDTH=999
