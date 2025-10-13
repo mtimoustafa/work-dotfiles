@@ -22,12 +22,25 @@ echo 'eval "$(starship init zsh)"' >> $HOME/.zshrc
 source $HOME/.zshrc
 starship/sync.sh
 
-# Install Neovim
+# Setup Neovim
 sudo dnf install -y neovim
 neovim/sync.sh
 
-# Install preferred programs
-sudo dnf install -y foot tmux atuin
+# Use Neovim for git commits
+git config --global core.editor "nvim"
+
+# Setup Foot terminal
+sudo dnf install -y foot
+terminals/foot/sync.sh
+
+# Setup tmux
+sudo dnf install -y tmux
+tmux/install.sh
+
+# Setup atuin for code completion
+sudo dnf install -y atuin
+echo 'eval "$(atuin init zsh)"' >> $HOME/.zshrc
+
 
 echo "Setup complete! Next steps:"
 echo "* Install a Nerd font: https://www.nerdfonts.com/font-downloads"
