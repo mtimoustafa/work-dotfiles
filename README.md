@@ -33,8 +33,9 @@ The `.zsh_profile_safe` file must be manually added to the shell configuration. 
 * difftastic
 * watch
 * cal
-* [atuin](https://atuin.sh)
-* [glow](https://github.com/charmbracelet/glow)
+* [atuin](https://atuin.sh): better command history
+* [glow](https://github.com/charmbracelet/glow): render markdown on the CLI
+* [dua](https://github.com/Byron/dua-cli): disk usage analysis TUI
 
 ## Tips & Tricks
 * Run `:healthcheck` in neovim to confirm the program and its extensions are working as expected.
