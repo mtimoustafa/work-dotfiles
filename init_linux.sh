@@ -41,6 +41,8 @@ tmux/install.sh
 sudo dnf install -y atuin
 echo 'eval "$(atuin init zsh)"' >> $HOME/.zshrc
 
+# Setup more programs
+sudo dnf install -y dua-cli fzf the_silver_searcher hyfetch
 
 echo "Setup complete! Next steps:"
 echo "* Install a Nerd font: https://www.nerdfonts.com/font-downloads"
