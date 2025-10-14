@@ -8,4 +8,5 @@ vim.keymap.set("n", "<C-K>", "<C-W><C-K>")
 vim.keymap.set("n", "<C-L>", "<C-W><C-L>")
 vim.keymap.set("n", "<C-H>", "<C-W><C-H>")
 
+-- Clear search selection
 vim.keymap.set("n", "<Leader>c", ":noh<CR>")

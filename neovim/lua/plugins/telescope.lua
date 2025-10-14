@@ -13,6 +13,7 @@ return {
 
     vim.keymap.set('n', '<leader>t', builtin.find_files, { desc = 'Telescope find files' })
     vim.keymap.set('n', '<leader>r', builtin.live_grep, { desc = 'Telescope live grep' })
+    vim.keymap.set('n', '<leader>s', builtin.current_buffer_fuzzy_find, { desc = 'Telescope find in current buffer' })
     vim.keymap.set('n', '<leader>k', builtin.commands, { desc = 'Telescope list vim commands' })
     vim.keymap.set('n', '<leader>h', builtin.help_tags, { desc = 'Telescope help tags' })
 
