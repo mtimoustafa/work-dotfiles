@@ -1,4 +1,7 @@
-sudo dnf install -y discord
+sudo dnf install -y \
+  discord \
+  restic \
+  rclone
 flatpak install -uy \
   org.videolan.VLC \
   app.zen_browser.zen \
