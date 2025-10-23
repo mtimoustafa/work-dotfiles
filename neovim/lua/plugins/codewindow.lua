@@ -5,7 +5,7 @@ return {
     local codewindow = require("codewindow")
 
     codewindow.setup({
-      auto_enable = true,
+      auto_enable = false,
       window_border = "none", -- Options: https://neovim.io/doc/user/options.html#'winborder'
     })
 
